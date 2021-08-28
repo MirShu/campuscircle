@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_app_main">
+
+    <com.mcxtzhang.swipemenulib.SwipeMenuLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/shape_list_itme">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_list_itme"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                style="@style/style_layout_main_item_goods_name"
+                android:layout_marginTop="8dp"
+                android:text="爱奇艺会员，还有8个月到期，要的联系我" />
+
+            <TextView
+                style="@style/style_layout_main_item_tv_gray"
+                android:layout_marginTop="15dp"
+                android:text="价格" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="299.0"
+                android:textColor="@color/color_ff4342"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/icon_line" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/tj_time"
+                    style="@style/style_layout_main_item_tv_gray"
+                    android:text="提交时间：2021.08.01 15：21：13" />
+
+                <TextView
+                    android:id="@+id/tv_sh_time"
+                    style="@style/style_layout_main_item_tv_gray"
+                    android:layout_below="@+id/tj_time"
+                    android:layout_marginTop="10dp"
+                    android:text="审核时间：2021.08.01 15：21：13" />
+
+                <TextView
+                    style="@style/style_layout_main_item_goods_name"
+                    android:layout_alignParentEnd="true"
+                    android:text="更多操作 >" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/style_layout_main_item_tv_gray"
+                    android:text="状态： " />
+
+                <TextView
+                    style="@style/style_layout_main_item_goods_name"
+                    android:text="等待审核" />
+
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/style_layout_main_item_tv_gray"
+                android:layout_marginTop="10dp"
+                android:text="剩余有效时间：0天2小时" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_01"
+                style="@style/style_state_item_tx"
+                android:background="#5b7fed"
+                android:text="续期" />
+
+
+            <TextView
+                android:id="@+id/tv_02"
+                style="@style/style_state_item_tx"
+                android:background="#6e45c9"
+                android:text="暂停" />
+
+
+            <TextView
+                android:id="@+id/tv_03"
+                style="@style/style_state_item_tx"
+                android:background="#e27fc8"
+                android:text="下架" />
+
+
+            <TextView
+                android:id="@+id/tv_04"
+                style="@style/style_state_item_tx"
+                android:background="#94c4df"
+                android:text="编辑" />
+
+
+            <TextView
+                android:id="@+id/tv_05"
+                style="@style/style_state_item_tx"
+                android:background="#ff3a2f"
+                android:text="删除" />
+
+        </LinearLayout>
+    </com.mcxtzhang.swipemenulib.SwipeMenuLayout>
+</RelativeLayout>

@@ -1,0 +1,3 @@
+rootProject.name = "schoolyard_market"
+include ':app'
+include ':pictureselector'

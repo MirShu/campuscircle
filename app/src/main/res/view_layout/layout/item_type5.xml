@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_layout_main_item_linearLayout">
+
+    <LinearLayout style="@style/style_layout_main_item_ll">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_user_head"
+                style="@style/style_layout_main_item_user_head" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                style="@style/style_layout_main_item_user_name"
+                android:layout_toEndOf="@+id/iv_user_head"
+                android:text="哈利路亚" />
+
+
+            <TextView
+                android:id="@+id/tv_user_name_time"
+                style="@style/style_layout_main_item_tv_gray"
+                android:layout_below="@+id/tv_user_name"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/iv_user_head"
+                android:text="2021.08.10" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_xinxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_user"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/ll_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_job"
+                    style="@style/style_layout_main_item_tv_gray"
+                    android:layout_marginTop="15dp"
+                    android:text="岗位名称：" />
+
+
+                <TextView
+                    android:id="@+id/tv_goods_name"
+                    style="@style/style_layout_main_item_goods_name"
+                    android:text="餐厅服务员" />
+
+
+                <TextView
+                    style="@style/style_layout_main_item_tv_gray"
+                    android:layout_marginTop="15dp"
+                    android:text="薪资待遇：" />
+
+
+                <TextView
+                    style="@style/style_layout_main_item_goods_name"
+                    android:text="月结，底薪加提成" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_job_time"
+                    style="@style/style_layout_main_item_tv_gray"
+                    android:layout_marginTop="15dp"
+                    android:text="工作时间：" />
+
+
+                <TextView
+                    style="@style/style_layout_main_item_goods_name"
+                    android:text="17：30-22：00" />
+
+
+                <TextView
+                    style="@style/style_layout_main_item_tv_gray"
+                    android:layout_marginTop="15dp"
+                    android:text="工作地点：" />
+
+
+                <TextView
+                    style="@style/style_layout_main_item_goods_name"
+                    android:text="上海市长宁区番禺路300鑫汉森商务" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_yaoqiu"
+            style="@style/style_layout_main_item_tv_gray"
+            android:layout_marginTop="15dp"
+            android:text="基本要求：" />
+
+        <TextView
+            style="@style/style_layout_main_item_goods_name"
+            android:text="1、18-30周岁，男女不限" />
+    </LinearLayout>
+</LinearLayout>

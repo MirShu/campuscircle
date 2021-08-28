@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_layout_main_item_linearLayout">
+
+    <LinearLayout style="@style/style_layout_main_item_ll">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_user_head"
+                style="@style/style_layout_main_item_user_head" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                style="@style/style_layout_main_item_user_name"
+                android:layout_toEndOf="@+id/iv_user_head"
+                android:text="哈利路亚" />
+
+
+            <TextView
+                android:id="@+id/tv_user_name_time"
+                style="@style/style_layout_main_item_tv_gray"
+                android:layout_below="@+id/tv_user_name"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/iv_user_head"
+                android:text="2021.08.10" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            style="@style/style_layout_main_item_tv_gray"
+            android:layout_marginTop="15dp"
+            android:text="提供：" />
+
+        <TextView
+            style="@style/style_layout_main_item_goods_name"
+            android:layout_marginTop="5dp"
+            android:text="带去快递，代买生活用品" />
+
+
+    </LinearLayout>
+</LinearLayout>

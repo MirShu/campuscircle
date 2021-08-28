@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.campuscircle.app.widget.RollScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="15dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="15dp">
+
+        <include layout="@layout/layout_sum" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_day_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有效期："
+                android:textColor="@color/color_999999" />
+
+
+            <TextView
+                android:id="@+id/tv_add_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/shape_post_next"
+                android:gravity="center_horizontal"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                android:text="增加有效期"
+                android:textColor="@color/color_ffffff" />
+
+
+            <TextView
+                android:id="@+id/tv_show_news_setting_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="消耗积分：" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_goods_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_goods_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="出租物名称"
+                    android:textColor="@color/color_999999" />
+
+                <EditText
+                    android:id="@+id/ed_goods_name"
+                    style="@style/style_input_edit_text"
+                    android:hint="闲置电动车"
+                    android:textColorHint="@color/color_d8d8db" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="租金/报酬"
+                    android:textColor="@color/color_999999" />
+
+                <EditText
+                    android:id="@+id/edit_price"
+                    style="@style/style_input_edit_text"
+                    android:hint="出租价格"
+                    android:inputType="number"
+                    android:textColorHint="@color/color_d8d8db" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="出租说明"
+            android:textColor="@color/color_999999" />
+
+        <EditText
+            android:id="@+id/edit_sum"
+            style="@style/style_input_edit_text"
+            android:hint="出租说明，如有特别的要求请描述清楚"
+            android:paddingTop="15dp"
+            android:paddingBottom="40dp"
+            android:textColorHint="@color/color_d8d8db" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="出租起始时间"
+                    android:textColor="@color/color_999999" />
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shape_post_next"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="2021.08.01"
+                    android:textColor="@color/color_ffffff" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="出租结束时间"
+                    android:textColor="@color/color_999999" />
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shape_post_next"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="2021.09.06"
+                    android:textColor="@color/color_ffffff" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="配图"
+            android:textColor="@color/color_999999" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_image"
+                android:layout_width="wrap_content"
+                android:layout_height="114dp"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+            <ImageView
+                android:id="@+id/iv_add_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_post_add_image" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_post_next"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="下一步"
+            android:textColor="@color/color_ffffff" />
+    </LinearLayout>
+
+</com.campuscircle.app.widget.RollScrollView>

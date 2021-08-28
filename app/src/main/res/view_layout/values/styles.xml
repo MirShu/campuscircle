@@ -1,0 +1,191 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:listDivider">@drawable/divider</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <!-- 隐藏标题栏 -->
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!-- PhotoPicker 样式 -->
+    <style name="customTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--背景颜色值-->
+        <item name="colorPrimary">#ffffff</item>
+        <!--导航栏高度值-->
+        <item name="actionBarSize">40dp</item>
+        <!-- 状态栏着色 -->
+        <item name="colorPrimaryDark">#666666</item>
+    </style>
+
+
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item><!-- 没有标题 -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="tab_menu_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="background">@color/transparent</item>
+    </style>
+
+
+    <!--item 外线性布局样式-->
+    <style name="style_layout_main_item_linearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="background">@color/color_app_main</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--item 线性布局样式-->
+    <style name="style_layout_main_item_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:background">@drawable/shape_list_itme</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--item 用户头像-->
+    <style name="style_layout_main_item_user_head">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:src">@mipmap/icon_touxiang</item>
+        <item name="riv_oval">true</item>
+    </style>
+
+    <!--item 用户名称-->
+    <style name="style_layout_main_item_user_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_3e3959</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--item 商品名称-->
+    <style name="style_layout_main_item_goods_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_3e3959</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--item item 灰色字体样式-->
+    <style name="style_layout_main_item_tv_gray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_b5b5ba</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!--item item dialog 底部三个按钮-->
+    <style name="style_dialog_bottom_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:background">@drawable/shape_popu_lianxi</item>
+    </style>
+
+
+    <!--详情页弹出框-->
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+
+
+    <!--item 发布需求-->
+    <style name="style_layout_post_tv">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_403b58</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/shape_post_tv_chose_bg</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="style_me_tv" parent="@style/Material.Drawable.Ripple.Wave">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_424242</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/color_ffffff</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:paddingStart">15dp</item>
+
+    </style>
+
+
+    <style name="style_me_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/color_f6f5f5</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:layout_marginStart">15dp</item>
+    </style>
+
+    <style name="style_input_edit_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/shape_input_edit_text</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="style_popup_tx">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+
+    <style name="style_state_item_tx">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingStart">20dp</item>
+    </style>
+
+</resources>

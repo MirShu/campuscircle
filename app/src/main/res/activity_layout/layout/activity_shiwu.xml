@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.campuscircle.app.widget.RollScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="15dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="15dp">
+
+        <include layout="@layout/layout_sum"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_day_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有效期："
+                android:textColor="@color/color_999999" />
+
+
+            <TextView
+                android:id="@+id/tv_add_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/shape_post_next"
+                android:gravity="center_horizontal"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                android:text="增加有效期"
+                android:textColor="@color/color_ffffff" />
+
+            <TextView
+                android:id="@+id/tv_show_news_setting_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="消耗积分："
+                android:textColor="@color/color_999999" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_goods_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_goods_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="物品名称"
+                    android:textColor="@color/color_999999" />
+
+                <EditText
+                    android:id="@+id/ed_goods_name"
+                    style="@style/style_input_edit_text"
+                    android:hint="置闲吹风机"
+                    android:textColorHint="@color/color_d8d8db" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="价格"
+                    android:textColor="@color/color_999999" />
+
+                <EditText
+                    android:id="@+id/edit_price"
+                    style="@style/style_input_edit_text"
+                    android:hint="想卖价格"
+                    android:inputType="number"
+                    android:textColorHint="@color/color_d8d8db" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="描述信息"
+            android:textColor="@color/color_999999" />
+
+        <EditText
+            android:id="@+id/edit_sum"
+            style="@style/style_input_edit_text"
+            android:hint="闲置衣物、生活用品甩卖"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColorHint="@color/color_d8d8db" />
+
+        <LinearLayout
+            android:id="@+id/ll_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="第三方平台链接、交易更安全"
+                android:textColor="@color/color_999999" />
+
+            <EditText
+                android:id="@+id/edit_link"
+                style="@style/style_input_edit_text"
+                android:hint="如：咸鱼商品链接"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textColorHint="@color/color_d8d8db" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="配图"
+                android:textColor="@color/color_999999" />
+
+
+            <ImageView
+                android:id="@+id/iv_add_image"
+                android:layout_width="80dp"
+                android:layout_height="@dimen/dp_60"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/icon_post_add_image" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_post_next"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="下一步"
+            android:textColor="@color/color_ffffff" />
+    </LinearLayout>
+
+</com.campuscircle.app.widget.RollScrollView>

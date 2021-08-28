@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lljob"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/style_layout_main_item_tv_gray"
+            android:layout_marginTop="15dp"
+            android:text="岗位名称：" />
+
+
+        <TextView
+            style="@style/style_layout_main_item_goods_name"
+            android:layout_marginTop="5dp"
+            android:text="服务生" />
+
+
+        <TextView
+            style="@style/style_layout_main_item_tv_gray"
+            android:layout_marginTop="10dp"
+            android:text="薪资待遇：" />
+
+
+        <TextView
+            style="@style/style_layout_main_item_goods_name"
+            android:layout_marginTop="5dp"
+            android:text="月结，底薪+提成" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/style_layout_main_item_tv_gray"
+            android:layout_marginTop="15dp"
+            android:text="工作时间：" />
+
+
+        <TextView
+            style="@style/style_layout_main_item_goods_name"
+            android:layout_marginTop="5dp"
+            android:text="17：30~21：30" />
+
+
+        <TextView
+            style="@style/style_layout_main_item_tv_gray"
+            android:layout_marginTop="10dp"
+            android:text="工作地点：" />
+
+
+        <TextView
+            style="@style/style_layout_main_item_goods_name"
+            android:layout_marginTop="5dp"
+            android:text="上海市长宁区番禺路300弄" />
+    </LinearLayout>
+</LinearLayout>

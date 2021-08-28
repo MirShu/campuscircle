@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_price"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_goods_shoujia"
+            style="@style/style_layout_main_item_tv_gray"
+            android:layout_marginTop="15dp"
+            android:text="售价：" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="299.0"
+            android:textColor="@color/color_ff4342"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pinche_zw"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_pinche"
+            style="@style/style_layout_main_item_tv_gray"
+            android:layout_marginTop="15dp"
+            android:text="剩余座位：" />
+
+
+        <TextView
+            android:id="@+id/tv_tv_pinche_price"
+            style="@style/style_layout_main_item_goods_name"
+            android:layout_marginTop="5dp"
+            android:text="2" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rl_chuzu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_chuzu"
+            style="@style/style_layout_main_item_tv_gray"
+            android:layout_marginTop="15dp"
+            android:text="出租时间：" />
+
+
+        <TextView
+            android:id="@+id/tv_tv_chuzu_price"
+            style="@style/style_layout_main_item_goods_name"
+            android:layout_below="@+id/tv_chuzu"
+            android:layout_marginTop="8dp"
+            android:text="2021.07.02~2021.08.02" />
+
+    </LinearLayout>
+</LinearLayout>

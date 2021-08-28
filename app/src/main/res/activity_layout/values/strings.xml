@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">campuscircle</string>
+
+
+    <string name="string_home_top_title">云南大学文化旅游学院</string>
+    <string name="string_home_top_sum1">校园跳蚤市场，淘好货，拼好车</string>
+    <string name="string_home_top_sum2">你想要什么，在这里发布让更多人看到你的需求</string>
+
+
+    <string name="string_popu_sum">1.我们只提供信息发布和展示功能，平台不涉及任何线上线下交易。\n2.如果发现信息不实、违规，点击举报，核实后将对其进行封号处理。\n3.实体物品交易请仔细检查外观、功能是否正常，一手交钱一手交货。\n4.如果您已认真阅读注意事项，可以点击下方按钮获取对方联系方式</string>
+
+
+
+    <string name="gdtslogan">GDTslogan</string>
+    <string name="splash_loading">广告加载中...</string>
+
+    <string name="exit">再次点击退出应用</string>
+
+
+    <string name="string_login_top_title">跳蚤市场</string>
+    <string name="string_login_top_sum1">大学生的跳蚤市场、学习生活平台</string>
+</resources>

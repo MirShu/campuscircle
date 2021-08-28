@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.campuscircle.app">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />    <!-- 可选，如果需要精确定位的话请加上此权限 -->
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+
+    <application
+        android:name=".base.BaseAplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true">
+
+
+        <provider
+            android:name="com.qq.e.comm.GDTFileProvider"
+            android:authorities="com.campuscircle.app.gdt.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/gdt_file_path" />
+        </provider>
+
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <!-- 声明SDK所需要的组件 -->
+        <service
+            android:name="com.qq.e.comm.DownloadService"
+            android:exported="false" />
+        <!-- 请开发者注意字母的大小写，ADActivity，而不是AdActivity -->
+
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.campuscircle.app"
+                    android:path="/main"
+                    android:scheme="ylh" />
+            </intent-filter>
+        </activity>
+
+
+        <!--        <activity-->
+        <!--            android:name="com.campuscircle.app.MainActivity"-->
+        <!--            android:screenOrientation="unspecified" />-->
+
+
+        <activity
+            android:name=".activity.ActivityPostDemand"
+            android:screenOrientation="unspecified" />
+
+        <activity
+            android:name=".activity.ActivitySearch"
+            android:screenOrientation="unspecified" />
+
+        <activity
+            android:name=".activity.me.ActivityHhr"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name=".activity.me.ActivityLx"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name=".activity.me.ActivitySc"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name=".activity.me.ActivitySm"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name=".activity.me.ActivityYj"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name=".activity.me.ActivityGy"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name=".activity.me.ActivityBj"
+            android:screenOrientation="unspecified" />
+
+        <activity
+            android:name=".activity.post.ActivityBaoChe"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name=".activity.post.ActivityChuZu"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name=".activity.post.ActivityQGJX"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name=".activity.post.ActivityQiTa"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name=".activity.post.ActivityShiWu"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name=".activity.post.ActivityXuNi"
+            android:screenOrientation="unspecified" />
+
+        <activity
+            android:name=".activity.ActivityPicShow"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" />
+
+        <activity
+            android:name=".activity.ActivityRegister"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <activity
+            android:name=".activity.ActivityLogin"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+    </application>
+
+</manifest>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="※  如果已完成交易请及时下架需求信息"
+        android:textColor="@color/color_403b58" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="※  如果已完成交易请及时下架需求信息"
+        android:textColor="@color/color_403b58" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="※  发布需要消耗积分，每日签到观看广告可赚取积分"
+        android:textColor="@color/color_403b58" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="※  需求发布有效期，过期后自动下架且无法被用户查看"
+        android:textColor="@color/color_403b58" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="※  当前发布，通过看一次广告可增加有效期：3天。上限：10天"
+        android:textColor="@color/color_403b58" />
+</LinearLayout>

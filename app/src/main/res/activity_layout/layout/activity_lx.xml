@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f7f5f6"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color_ffffff"
+        android:paddingStart="15dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="20dp"
+        android:text="管理编辑您的联系方式，当您发布需求时，别人可以通过联系查看获取您的联系方式。\n\n注意：发布需求必须指定至少一种联系方式"
+        android:textColor="@color/color_403b58"
+        android:textSize="16sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/color_ffffff"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/icon_lx_phone"
+            android:drawablePadding="10dp"
+            android:paddingTop="15dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="15dp"
+            android:text="手机号" />
+
+
+        <CheckBox
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_lx_checkbox"
+            android:button="@null" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/color_ffffff"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <TextView
+            android:id="@+id/tv_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/icon_lx_wechat"
+            android:drawablePadding="10dp"
+            android:paddingTop="15dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="15dp"
+            android:text="微信" />
+
+
+        <CheckBox
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_lx_checkbox"
+            android:button="@null" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/color_ffffff"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <TextView
+            android:id="@+id/tv_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/icon_lx_qq"
+            android:drawablePadding="10dp"
+            android:paddingTop="15dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="15dp"
+            android:text="QQ" />
+
+
+        <CheckBox
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_lx_checkbox"
+            android:button="@null" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/color_ffffff"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/icon_lx_email"
+            android:drawablePadding="10dp"
+            android:paddingTop="15dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="15dp"
+            android:text="邮箱" />
+
+
+        <CheckBox
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_lx_checkbox"
+            android:button="@null" />
+    </RelativeLayout>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/selector_lx_radiobutton"
+            android:text="未选中状态，即不对外开放该联系方式"
+            android:drawablePadding="10dp"
+            android:button="@null"
+            android:background="@color/transparent"
+            android:textColor="@color/color_999999" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/selector_lx_radiobutton"
+            android:drawablePadding="10dp"
+            android:button="@null"
+            android:background="@color/transparent"
+            android:text="选中状态，即对外开放该联系方式"
+            android:textColor="@color/color_999999" />
+    </RadioGroup>
+
+
+</LinearLayout>

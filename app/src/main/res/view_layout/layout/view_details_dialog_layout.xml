@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_details_dialog_layout_bg"
+    android:orientation="vertical">
+
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="5dp"
+        android:src="@mipmap/icon_back" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_user_head"
+                style="@style/style_layout_main_item_user_head" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                style="@style/style_layout_main_item_user_name"
+                android:layout_toEndOf="@+id/iv_user_head"
+                android:text="哈利路亚" />
+
+            <TextView
+                android:id="@+id/tv_user_name_time"
+                style="@style/style_layout_main_item_tv_gray"
+                android:layout_below="@+id/tv_user_name"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/iv_user_head" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            style="@style/style_layout_main_item_goods_name"
+            android:layout_below="@+id/rl_user"
+            android:layout_marginTop="8dp"
+            android:text="戴森吹风机" />
+
+
+        <TextView
+            android:id="@+id/tv_goods_sum"
+            style="@style/style_layout_main_item_tv_gray"
+            android:layout_below="@+id/tv_goods_name"
+            android:layout_marginTop="5dp"
+            android:text="全新无拆，买来没用，有点小，适合女生" />
+
+        <include layout="@layout/layout_ll_price"/>
+
+        <include layout="@layout/layout_ll_job"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_chuzu_sm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_chuzu_sm"
+                style="@style/style_layout_main_item_tv_gray"
+                android:layout_marginTop="15dp"
+                android:text="出租说明：" />
+
+
+            <TextView
+                android:id="@+id/tv_shuo_ming"
+                style="@style/style_layout_main_item_goods_name"
+                android:layout_below="@+id/tv_chuzu_sm"
+                android:layout_marginTop="5dp"
+                android:text="暑假回老家，电动车出租，仅限女生，要爱惜车，损坏要陪的" />
+
+        </RelativeLayout>
+
+
+        <include layout="@layout/layout_rl_iv"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_ts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="平台提示"
+            android:textColor="@color/color_f24826"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tv_sum"
+            style="@style/style_layout_main_item_tv_gray"
+            android:layout_below="@+id/tv_ts"
+            android:layout_marginTop="5dp"
+            android:text="1.我们只提供信息发布和展示功能，平台不涉及任何线上线下交易。\n2.如果发现信息不实、违规，点击举报，核实后将对其进行封号处理。\n3.实体物品交易请仔细检查外观、功能是否正常，一手交钱一手交货。\n4.如果您已认真阅读注意事项，可以点击下方按钮获取对方联系方式" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_lianxi"
+                style="@style/style_dialog_bottom_button"
+                android:text="联系TA" />
+
+
+            <TextView
+                android:id="@+id/tv_jubao"
+                style="@style/style_dialog_bottom_button"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/tv_lianxi"
+                android:text="举报TA" />
+
+
+            <TextView
+                android:id="@+id/tv_shoucang"
+                style="@style/style_dialog_bottom_button"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/tv_jubao"
+                android:text="收藏一下" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

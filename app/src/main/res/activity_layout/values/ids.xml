@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="selected_view" type="id"/>
+    <item name="drawable_callback_tag" type="id" />
+
+    <item type="id" name="statusbarutil_fake_status_bar_view" />
+    <item type="id" name="statusbarutil_translucent_view" />
+    <!--界面loading-->
+    <item type="id" name="xstatusbar_fake_status_bar_view" />
+    <item type="id" name="xstatusbar_translucent_view" />
+    <item type="id" name="xloading_retry" />
+
+    <item name="myview" type="id"/>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="15dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_home_state_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="15dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/tv_fabu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的发布"
+            android:textColor="@color/color_3b3653"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_fabu"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/tv_fabu"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_checkbox_state"
+            android:drawablePadding="5dp"
+            android:text="全部" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_toEndOf="@+id/tv_fabu"
+                android:text="延长有效期"
+                android:textColor="@color/color_3b3653"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_fabu"
+                android:text="仅对已发布且未过期的需求生效"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_home_state_head"
+        android:layout_marginTop="29dp"
+        android:overScrollMode="never" />
+
+    <include
+        layout="@layout/view_popup_window_state_more"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
